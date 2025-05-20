@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial simples</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- MENU SUPERIOR -->
+    <div id="menu-superior">
+        <img src="imagens/LogoSample_ByTailorBrands.jpg" id="logo" alt="">
+        <h1 class="textosuperior" id="titulo-menusuperior">Inicie sua especialização na área!</h1>
+        <p class="textosuperior" id="texto-menusuperior">Inscreva-se no cruso gratuito de introdução à MATH e aprenda os
+            caminhos da sua
+            pós gradiuação em diversas áreas
+            de exatas como Matemática, Física, Quimica.</p>
+    </div>
+
+    <!-- MENU INFORMACIONAL -->
+    <div id="menu-informacional">
+
+        <p class="textoinformativo"> <img src="imagens/diploma.png" class="icone" alt=""> Certificado de conclusão</p>
+
+        <p class="textoinformativo"> <img src="imagens/relogio.png" class="icone" alt=""> Nos encaixamos nos seus
+            horários</p>
+
+        <p class="textoinformativo"> <img src="imagens/camera.png" class="icone" alt=""> Aulas online e gravadas</p>
+    </div>
+
+    <!-- MENU DE VIDEO -->
+    <div id="secaovideo">
+        <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/6OQlwDrGY2k"
+            title="Assista esse vídeo se você quiser VER a RELATIVIDADE GERAL" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div id="textovideo">
+            <h1 id="titulovideo">Aprenda com especialistas e <br> comece seu primeiro projeto</h1> <br>
+            <p id="paragrafovideo">"Descubra como a MATH desenvolveu um processo inovador que potencializa o
+                aprendizado,
+                mesmo no ambiente online, garantindo um nível de compreensão e retenção de conteúdo ainda mais elevado
+                para seus alunos."
+                <br> <br>
+                Novas tecnologias com IA são utilizadas para o auxilio dos nossos aluno!
+            </p>
+        </div>
+
+
+    </div>
+    <!-- Carroseul -->
+
+    <div id="carrossel">
+        <h1 id="titulo-carrossel">Mais de 500 alunos já iniciaram seus estudos</h1>
+
+        <div id="div-card">
+            <img onclick="RolarParaEsquerda()" id="setaE" class="seta" src="cards/setaE.svg" alt="">
+            <img id="leonardo" class="card" src="cards/leonardo.svg" alt="">
+            <img id="samanta" class="card" src="cards/samanta.svg" alt="">
+            <img id="bruna" class="card" src="cards/bruna.svg" alt="">
+            <img onclick="RolarParaDireita()" id="setaD" class="seta" src="cards/setaD.svg" alt="">
+        </div>
+    </div>
+
+    <!-- FORMULARIO -->
+
+    <div id="formulario">
+        <h1 id="titulo-formulario">Comece agora mesmo e dê o primeiro passo da sua carreira</h1>
+        <form>
+            <input type="text" placeholder="Nome" id="nome">
+            <input type="email" placeholder="Email" id="email">
+            <input type="number" placeholder="Telefone" id="telefone">
+        </form>   
+
+    </div>
+
+    <div id="botaoTroca">
+        <button id="botaoExibir" onclick="MostrarDetalhes()">Mostrar detalhes</button>
+    </div>
+
+
+    <!-- explicacao -->
+
+    <div id="detalhes" >
+
+        <div id="formulario-preenchido">
+            <h1>Seu formulário:</h1>
+            <p id="dados-nome">nome</p>
+            <p id="dados-email">email</p>
+            <p id="dados-telefone">telefone</p>
+        </div>
+
+        <div id="explicacao">
+            <h1>Explicação:</h1>
+            <p id="paragrafoExplicacao">Antigamente essa landingpage criava um excel dentro de um google drive e enviava
+                essas informações já
+                formatadas para esse
+                google dirve utilizando uma ferramenta chamada 'Sheet Monkey', porém essa ferramente agora é
+                inteiramente paga, portanto não será poossivel
+                realizar essa ação. Para o botão não ficar sem ação estou exibindo as informações preenchidas aqui ao
+                lado </p>
+        </div>
+    </div>
+
+    <div id="botaoEsconder">
+        <button id="trocarPagina" onclick="EsconderDetalhes()">Esconder</button>
+    </div>
+
+        
+
+    <script src="index.js"></script>
+</body>
+
+</html>

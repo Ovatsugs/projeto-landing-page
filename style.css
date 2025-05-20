@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    font-family: 'inter';
+}
+
+#logo {
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 40px;
+    
+}
+
+.textosuperior{
+    margin-right: 200px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: #0842ac;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+#titulo-menusuperior{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+
+#texto-menusuperior {
+    margin: 25px 200px 10px 200px;
+    padding: 10px 0 10px 0px;
+}
+
+#menu-superior {
+    background-image: url(imagens/jovemestudando.jpg);
+    padding-bottom: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Menu informacional simples */
+
+#menu-informacional{
+    background-color: #eaece5;
+    color: black;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-left: 100px;
+}
+
+.icone{
+   margin: 35px 0px 35px 100px;
+   padding: 20px;
+}
+
+.textoinformativo{
+    display: flex;
+    align-items: center;
+}
+
+/* Video */
+
+#secaovideo{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#video{
+    margin: 50px 0px 50px 200px;
+}
+
+#titulovideo{
+    color: #0842ac;
+}
+
+#textovideo{
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+#paragrafovideo{
+    margin-right: 200px;
+}
+
+#carrossel{
+    background-color: #0842ac;
+    padding: 50px;
+}
+
+#titulo-carrossel{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#div-card{
+    margin-top: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.seta{
+    cursor: pointer;
+}
+
+.seta:hover{
+    transform:translateY(-5px);
+    transition-duration: 0.5s;
+}
+
+#setaE{
+    display: none;
+}
+
+#bruna{
+    display: none;
+}
+
+/* FORMULARIO */
+
+#formulario{
+    text-align: center;
+}
+
+#titulo-formulario{
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+form{
+    display: inline-grid;
+    justify-items: center;
+}
+
+input{
+    margin: 20px;
+    width: 300px;
+    height: 53px;
+    background-color: #eaece5;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 0px;
+}
+
+button{
+    margin: 20px;
+    margin-bottom: 50px;
+    width: 223px;
+    height: 40px;
+    background-color: #0842ac;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 15px 20px #072864a1;
+    transform: translateY(-2px);
+    transition-duration: 0.5s;
+}
+
+
+/* formulario escondido */
+#detalhes{
+    display: none;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    margin-bottom: 200px;
+}
+#detalhes h1{
+    margin: 50px;
+    color: #0842ac;
+    
+
+}
+
+#formulario-preenchido p {
+    margin: 15px;
+    font-size: 25px;
+}
+
+#paragrafoExplicacao {
+    margin-top: 70px;
+}   
+
+#botaoTroca {
+    text-align: center;
+}
+
+#botaoEsconder{
+    display: none;
+    text-align: center;
+}
